@@ -45,19 +45,17 @@
       <fieldset class="cat-data fields-group">
         <legend class="visually-hidden">Личные данные кота</legend>
         <ul class="fields-group__list">
-          <li class="fields-group__item">
-            <label class="fields-group__label" for="cat-name">Имя:<sup>*</sup></label>
-            <input class="fields-group__text-input" type="text" id="cat-name" name="cat-name" placeholder="БАРСИК"
-              required>
+          <li class="field">
+            <label class="field__label" for="cat-name">Имя:<sup>*</sup></label>
+            <input class="field__text-input" type="text" id="cat-name" name="cat-name" placeholder="БАРСИК" required>
           </li>
-          <li class="fields-group__item">
-            <label class="fields-group__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-            <input class="fields-group__text-input" type="text" id="cat-weight" name="cat-weight" placeholder="7"
-              required>
+          <li class="field">
+            <label class="field__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+            <input class="field__text-input" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
           </li>
-          <li class="fields-group__item">
-            <label class="fields-group__label" for="cat-age">Возраст (лет):</label>
-            <input class="fields-group__text-input" type="text" id="cat-age" name="cat-age" placeholder="7">
+          <li class="field">
+            <label class="field__label" for="cat-age">Возраст (лет):</label>
+            <input class="field__text-input" type="text" id="cat-age" name="cat-age" placeholder="7">
           </li>
         </ul>
       </fieldset>
@@ -65,17 +63,17 @@
       <fieldset class="goal fields-group">
         <legend class="visually-hidden">Цель плана питания</legend>
         <ul class="fields-group__list">
-          <li class="fields-group__item">
+          <li class="field">
             <input class="visually-hidden" type="radio" id="slimming" name="plan-goal" value="slimming" checked>
-            <label class="fields-group__label" for="slimming">Похудение</label>
+            <label class="field__label field__label--radio" for="slimming">Похудение</label>
           </li>
-          <li class="fields-group__item">
+          <li class="field">
             <input class="visually-hidden" type="radio" id="gaining" name="plan-goal" value="gaining">
-            <label class="fields-group__label" for="gaining">Набор массы</label>
+            <label class="field__label field__label--radio" for="gaining">Набор массы</label>
           </li>
-          <li class="fields-group__item">
+          <li class="field">
             <input class="visually-hidden" type="radio" id="unknown" name="plan-goal" value="unknown">
-            <label class="fields-group__label" for="unknown">Не знаю (нужен ваш совет)</label>
+            <label class="field__label field__label--radio" for="unknown">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
@@ -83,14 +81,14 @@
       <fieldset class="owner-contacts fields-group">
         <legend class="fields-group__legend">Контактные данные (владельца кота)</legend>
         <ul class="fields-group__list">
-          <li class="fields-group__item">
-            <label class="fields-group__label" for="email-address">E-main:<sup>*</sup></label>
-            <input class="fields-group__text-input fields-group__text-input--email" type="email" id="email-address"
-              name="email-address" placeholder="kuklachev@gmail.com" required>
+          <li class="field">
+            <label class="field__label" for="email-address">E-main:<sup>*</sup></label>
+            <input class="field__text-input field__text-input--icon field__text-input--email" type="email"
+              id="email-address" name="email-address" placeholder="kuklachev@gmail.com" required>
           </li>
-          <li class="fields-group__item">
-            <label class="fields-group__label" for="phone-no">Tелефон:<sup>*</sup></label>
-            <input class="fields-group__text-input fields-group__text-input--tel" type="tel" id="phone-no"
+          <li class="field">
+            <label class="field__label" for="phone-no">Tелефон:<sup>*</sup></label>
+            <input class="field__text-input field__text-input--icon field__text-input--tel" type="tel" id="phone-no"
               name="phone-no" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
@@ -105,21 +103,21 @@
       <fieldset class="additions fields-group">
         <legend class="fields-group__legend">Дополнительно</legend>
         <ul class="fields-group__list">
-          <li class="fields-group__item">
+          <li class="field">
             <input class="visually-hidden" type="checkbox" id="sweetener" name="additions-sweetener" checked>
-            <label class="fields-group__label" for="sweetener">Сахарозаменитель</label>
+            <label class="field__label field__label--checkbox" for="sweetener">Сахарозаменитель</label>
           </li>
-          <li class="fields-group__item">
+          <li class="field">
             <input class="visually-hidden" type="checkbox" id="water" name="additions-water">
-            <label class="fields-group__label" for="water">Питьевая вода</label>
+            <label class="field__label field__label--checkbox" for="water">Питьевая вода</label>
           </li>
-          <li class="fields-group__item">
+          <li class="field">
             <input class="visually-hidden" type="checkbox" id="milk" name="additions-milk">
-            <label class="fields-group__label" for="milk">Молоко</label>
+            <label class="field__label field__label--checkbox" for="milk">Молоко</label>
           </li>
-          <li class="fields-group__item">
+          <li class="field">
             <input class="visually-hidden" type="checkbox" id="vitamins" name="additions-vitamins">
-            <label class="fields-group__label" for="vitamins">Витамины</label>
+            <label class="field__label field__label--checkbox" for="vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
