@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -37,7 +38,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин функционального питания для котов</h1>
 
-    <section class="page-title container">
+    <section class="page-title page-title--index container">
       <h2 class="page-title__caption">Функциональное питание для котов</h2>
       <p class="page-title__slogan">Занялся собой? Займись котом!</p>
       <a class="page-title__select-program-link button" href="program.html">Подобрать программу</a>
@@ -93,13 +94,17 @@
           <img class="slider__slide" src="img/after-mobile.png" alt="Фото кота после программы">
         </div>
         <div class="slider__controls">
-          <label><input class="slider__control" type="radio" name="slider-control" value="before" checked>Было</label>
+          <label class="slider__label">
+            <input class="slider__control" type="radio" name="slider-control" value="before" checked>Было
+          </label>
           <div class="slider__scale-container">
             <div class="slider__scale">
               <div class="slider__thumb" title="Состояние фото"></div>
             </div>
           </div>
-          <label><input class="slider__control" type="radio" name="slider-control" value="after">Стало</label>
+          <label class="slider__label">
+            <input class="slider__control" type="radio" name="slider-control" value="after">Стало
+          </label>
         </div>
       </div>
     </section>

@@ -1,0 +1,24 @@
+.progress__value {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.progress__description {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special_dark-grey;
+}
+
+.progress__expenses {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}

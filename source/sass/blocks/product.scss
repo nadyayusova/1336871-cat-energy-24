@@ -1,0 +1,26 @@
+.product {
+  padding: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.product:first-of-type {
+  border-top: 1px solid #ebebeb;
+}
+
+.product__name {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.product__description,
+.product__value {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}

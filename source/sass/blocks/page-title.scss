@@ -1,0 +1,39 @@
+.page-title {
+  padding: 20px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.page-title--index {
+  background-color: $basic-green-2;
+  background-image:  url("../../img/index-can.png"),
+    url("../../img/index-green-cat.png");
+  background-position: top center, top center;
+  background-repeat: no-repeat, no-repeat;
+  border-top: none;
+}
+
+.page-title__caption {
+  margin: 0;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: $black;
+}
+
+.page-title--index .page-title__caption {
+  color: $white;
+}
+
+.page-title__slogan {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.page-title__select-program-link {
+  font-size: 14px;
+  line-height: 18px;
+}

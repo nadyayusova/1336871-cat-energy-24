@@ -1,0 +1,26 @@
+.related-product {
+  padding: 10px 20px 20px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.related-product:first-of-type {
+  border-top: 1px solid #cdcdcd;
+}
+
+.related-product__name {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.related-product__volume,
+.related-product__price {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
