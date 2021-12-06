@@ -1,0 +1,16 @@
+.example {
+  padding: 25px 20px;
+  background-color: $slider-bg;
+}
+
+.example__title {
+  color: $black;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}

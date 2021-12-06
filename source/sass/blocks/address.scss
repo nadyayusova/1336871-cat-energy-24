@@ -1,0 +1,26 @@
+.address {
+  padding: 25px 20px;
+}
+
+.address--special {
+  background-color: $basic-grey;
+}
+
+.address__welcome-text {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $almost-black;
+}
+
+.address__street,
+.address__city {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+}

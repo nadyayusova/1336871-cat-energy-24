@@ -1,0 +1,23 @@
+.field__label {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.field__label--radio {
+  color: $special-dark-grey-2;
+}
+
+.field__label--checkbox {
+  color: $black;
+}
+
+.field__text-input {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}

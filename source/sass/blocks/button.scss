@@ -1,0 +1,15 @@
+.button {
+  padding: 10px 25px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $basic-green;
+  border: none;
+}
+
+.button--special {
+  color: $special-dark-grey;
+  background-color: $basic-grey;
+}
