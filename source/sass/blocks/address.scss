@@ -1,5 +1,17 @@
 .address {
+  display: grid;
+  grid-template-areas:
+    "w s"
+    "w c";
   padding: 25px 20px;
+
+  @media (min-width: $page-width-desktop) {
+    position: absolute;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $white;
+  }
 }
 
 .address--special {
@@ -7,6 +19,8 @@
 }
 
 .address__welcome-text {
+  grid-area: w;
+  width: 50%;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -23,4 +37,12 @@
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+}
+
+.address__street {
+  grid-area: s;
+}
+
+.address__city {
+  grid-area: c;
 }
