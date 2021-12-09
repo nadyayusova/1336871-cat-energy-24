@@ -1,3 +1,20 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $page-width-tablet) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    flex-direction: column;
+  }
+}
+
+.progress__list {
+  display: flex;
+}
+
 .progress__value {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;

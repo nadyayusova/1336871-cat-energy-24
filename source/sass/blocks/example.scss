@@ -1,10 +1,21 @@
 .example {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
   padding: 25px 20px;
   background-color: $slider-bg;
+
+  @media (min-width: $page-width-desktop) {
+    grid-template-columns: repeat(2, 50%);
+  }
 }
 
 .example__title {
   color: $black;
+
+  @media (min-width: $page-width-desktop) {
+    grid-column: 1 / 2;
+  }
 }
 
 .example__text {
@@ -13,4 +24,20 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+
+  @media (min-width: $page-width-desktop) {
+    grid-column: 1 / 2;
+  }
+}
+
+.example__progress {
+  @media (min-width: $page-width-desktop) {
+    grid-column: 1 / 2;
+  }
+}
+
+.example__slider {
+  @media (min-width: $page-width-desktop) {
+    grid-column: 2 / 3;
+  }
 }

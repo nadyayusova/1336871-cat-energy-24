@@ -4,12 +4,21 @@
 }
 
 .page-title--index {
+  min-height: 480px;
   background-color: $basic-green-2;
   background-image:  url("../../img/index-can.png"),
     url("../../img/index-green-cat.png");
   background-position: top center, top center;
   background-repeat: no-repeat, no-repeat;
   border-top: none;
+
+  @media (min-width: $page-width-tablet) {
+    min-height: 810px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    min-height: 696px;
+  }
 }
 
 .page-title__caption {

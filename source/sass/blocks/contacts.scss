@@ -1,4 +1,11 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
   background-color: $basic-grey;
+
+  @media (min-width: $page-width-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
