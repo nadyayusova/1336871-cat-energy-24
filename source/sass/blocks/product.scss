@@ -1,6 +1,25 @@
 .product {
+  display: grid;
+  grid-template-areas:
+    "picture title"
+    "picture table"
+    "button  button";
   padding: 20px;
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $page-width-tablet) {
+    max-width: 324px;
+    background-color: $basic-grey;
+    grid-template-areas:
+      "picture"
+      "title"
+      "table"
+      "button";
+  }
+
+  @media (min-width: $page-width-desktop) {
+    max-width: 245px;
+  }
 }
 
 .product:first-of-type {
@@ -8,12 +27,24 @@
 }
 
 .product__name {
+  grid-area: title;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+}
+
+.product__image {
+  grid-area: picture;
+}
+
+.product__options {
+  grid-area: table;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .product__description,
@@ -23,4 +54,8 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+}
+
+.product__order-link {
+  grid-area: button;
 }

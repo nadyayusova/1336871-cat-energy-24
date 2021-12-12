@@ -1,4 +1,10 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form__suggestion {
+  width: 100%;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -8,7 +14,19 @@
 }
 
 .form__helper {
+  width: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $page-width-tablet) {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    grid-template-columns: 568px 1fr;
+    column-gap: 80px;
+  }
 }
 
 .form__notes {
