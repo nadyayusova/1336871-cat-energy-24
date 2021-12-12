@@ -1,1 +1,18 @@
-//
+.goal {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $page-width-tablet) {
+    border: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    width: 50%;
+  }
+}
+
+.goal__fields {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

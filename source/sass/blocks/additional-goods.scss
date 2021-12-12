@@ -1,8 +1,37 @@
+.additional-goods {
+  @media (min-width: $page-width-desktop) {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "table offer";
+  }
+}
+
+.additional-goods__title {
+  @media (min-width: $page-width-desktop) {
+    grid-area: title;
+  }
+}
+
+.additional-goods__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $page-width-desktop) {
+    grid-area: table;
+  }
+}
+
 .additional-goods__offer {
   min-height: 290px;
   margin: 35px 20px;
   background-image: url("../../img/catalog-green-cat.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $page-width-desktop) {
+    grid-area: offer;
+  }
 }
 
 .additional-goods__text {
