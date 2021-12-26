@@ -1,11 +1,36 @@
 .contacts {
+  background-color: $basic-grey;
+}
+
+.contacts__inner {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-  background-color: $basic-grey;
+  justify-content: center;
+  align-items: center;
+  padding: 0 $page-padding-mobile;
 
   @media (min-width: $page-width-tablet) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 55px $page-padding-tablet;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    padding: 57px $page-padding-desktop;
+  }
+}
+
+.contacts__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 95px;
+  padding: 20px 0;
+
+  @media (min-width: $page-width-tablet) {
+    justify-content: start;
+    min-height: max-content;
+    padding: 0;
   }
 }

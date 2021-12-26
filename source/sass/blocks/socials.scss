@@ -1,9 +1,27 @@
 .socials {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $page-width-tablet) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.socials__inner {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 130px;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  border-bottom: 1px solid #d9d9d9;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
 }
 
 .socials__link {

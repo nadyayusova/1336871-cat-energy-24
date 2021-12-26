@@ -5,20 +5,141 @@
   @media (min-width: $page-width-tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: $page-width-tablet;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $page-padding-tablet;
+    padding-right: $page-padding-tablet;
   }
 
   @media (min-width: $page-width-desktop) {
-    padding-left: 110px;
-    padding-right: 110px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: $page-width-desktop;
+    min-height: 178px;
+    padding-left: $page-padding-desktop;
+    padding-right: $page-padding-desktop;
+    z-index: 10;
   }
 }
 
 .main-nav__controls {
   display: flex;
-  min-height: 66px;
-  margin-right: 90px;
+  justify-content: space-between;
+  min-height: 65px;
+  padding: 10px $page-padding-mobile;
+
+  @media (min-width: $page-width-tablet) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.main-nav__logo-link {
+  display: flex;
+}
+
+.main-nav__logo-image {
+  margin-right: 55px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-right: 12px;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 40px;
+  height: 45px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $page-width-tablet) {
+    display: none;
+  }
+}
+
+// если будем стилизовать кнопку меню
+// .main-nav__toggle:hover,
+// .main-nav__toggle:active {
+//   background-color: ;
+// }
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+// если будем стилизовать кнопку меню
+// .main-nav--closed .main-nav__toggle:active::before {
+//   background-color: fade(#ffffff, 30%);
+//   box-shadow:
+//     0 8px 0 0 fade(#ffffff, 30%),
+//     0 16px 0 0 fade(#ffffff, 30%);
+// }
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__controls {
+    border-bottom: 1px solid $white;
+  }
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--opened .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 8px;
+      width: 25px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    // если будем стилизовать кнопку меню
+    // &:active::before,
+    // &:active::after {
+    //   background-color: fade(#ffffff, 30%);
+    // }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--opened .main-nav__list {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $white;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav__list {
@@ -33,17 +154,35 @@
   @media (min-width: $page-width-tablet) {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 440px;
+    min-width: 440px + $menu-item-gap;
   }
 
   @media (min-width: $page-width-desktop) {
-    max-width: 478px;
+    min-width: 478px + $menu-item-gap;
   }
 }
 
 .main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   min-height: 66px;
-  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $page-width-tablet) {
+    width: auto;
+    margin-left: $menu-item-gap;
+    border: none;
+  }
+}
+
+.main-nav__item:first-child {
+  min-height: 67px;
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .main-nav__link {
@@ -53,4 +192,49 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $page-width-tablet) {
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+  }
+}
+
+.main-nav__item--current .main-nav__link {
+  @media (min-width: $page-width-tablet) {
+    border-bottom: 2px solid $basic-green;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    border-bottom: 2px solid $white;
+  }
+}
+
+.main-nav__item:not(.main-nav__item--current) .main-nav__link {
+  &:active {
+    @media (min-width: $page-width-tablet) {
+      color: rgba($black, 0.3);
+    }
+
+    @media (min-width: $page-width-desktop) {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &:hover {
+    @media (min-width: $page-width-tablet) {
+      color: rgba($black, 0.6);
+    }
+
+    @media (min-width: $page-width-desktop) {
+      color: rgba($white, 0.6);
+    }
+  }
 }

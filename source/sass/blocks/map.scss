@@ -1,6 +1,20 @@
 .map {
   min-height: 362px;
   background-color: $basic-grey;
+
+  @media (min-width: $page-width-tablet) {
+    min-height: 400px;
+  }
+}
+
+.map__inner {
   background-image: url("../../img/map-bg.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.map__inner > iframe {
+  display: block;
+  width: 100%;
 }
