@@ -14,68 +14,68 @@
     min-height: 374px;
     padding: 40px 52px 55px;
   }
-}
 
-.plan--slimming::before {
-  top: 20px;
-  left: 20px;
-  width: 50px;
-  height: 53px;
-  background-image: url("../../img/cat_slim.svg");
+  &--slimming::before {
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../../img/cat_slim.svg");
 
-  @media (min-width: $page-width-tablet) {
-    right: 62px;
-    bottom: 80px;
-    width: 200px;
-    height: 211px;
+    @media (min-width: $page-width-tablet) {
+      right: 62px;
+      bottom: 80px;
+      width: 200px;
+      height: 211px;
+    }
+
+    @media (min-width: $page-width-desktop) {
+      top: 41px;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+    }
   }
 
-  @media (min-width: $page-width-desktop) {
-    top: 41px;
-    left: 52px;
-    width: 100px;
-    height: 106px;
-  }
-}
+  &--gaining::before {
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../img/cat_gain.svg");
 
-.plan--gaining::before {
-  top: 24px;
-  left: 13px;
-  width: 67px;
-  height: 50px;
-  background-image: url("../../img/cat_gain.svg");
+    @media (min-width: $page-width-tablet) {
+      right: 28px;
+      bottom: 80px;
+      width: 268px;
+      height: 200px;
+    }
 
-  @media (min-width: $page-width-tablet) {
-    right: 28px;
-    bottom: 80px;
-    width: 268px;
-    height: 200px;
-  }
-
-  @media (min-width: $page-width-desktop) {
-    top: 47px;
-    left: 33px;
-    width: 134px;
-    height: 100px;
-  }
-}
-
-.plan::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-width: $page-width-tablet) {
-    left: unset;
-    top: auto;
+    @media (min-width: $page-width-desktop) {
+      top: 47px;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+    }
   }
 
-  @media (min-width: $page-width-desktop) {
-    right: unset;
-    bottom: auto;
+  .plan::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $page-width-tablet) {
+      left: unset;
+      top: auto;
+    }
+
+    @media (min-width: $page-width-desktop) {
+      right: unset;
+      bottom: auto;
+    }
   }
 }
 

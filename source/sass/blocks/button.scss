@@ -7,27 +7,27 @@
   color: $white;
   background-color: $basic-green;
   border: none;
-}
 
-.button:active {
-  color: rgba($white, 0.3);
-  background-color: $basic-green-2;
-}
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $basic-green-2;
+  }
 
-.button:hover {
-  background-color: $basic-green-2;
-}
+  &:hover {
+    background-color: $basic-green-2;
+  }
 
-.button--special {
-  color: $special-dark-grey;
-  background-color: $basic-grey;
-}
+  &--special {
+    color: $special-dark-grey;
+    background-color: $basic-grey;
+  }
 
-.button--special:active {
-  color: rgba($special-dark-grey, 0.3);
-  background-color: $special-grey-2;
-}
+  &--special:active {
+    color: rgba($special-dark-grey, 0.3);
+    background-color: $special-grey-2;
+  }
 
-.button--special:hover {
-  background-color: $special-grey-2;
+  &--special:hover {
+    background-color: $special-grey-2;
+  }
 }

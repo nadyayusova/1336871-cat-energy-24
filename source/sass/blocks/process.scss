@@ -61,22 +61,23 @@
   @media (min-width: $page-width-desktop) {
     padding-right: 0;
   }
-}
 
-.process__item::before {
-  @media (min-width: $page-width-tablet) {
-    content: counter(bg-digits);
-    grid-area: 1/2/2/3;
-    justify-self: center;
-    align-self: start;
+  &::before {
+    @media (min-width: $page-width-tablet) {
+      content: counter(bg-digits);
+      grid-area: 1/2/2/3;
+      justify-self: center;
+      align-self: start;
 
-    font-family: "Oswald Regular", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 280px;
-    line-height: 205px;
-    color: $basic-grey;
+      font-family: "Oswald Regular", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 205px;
+      color: $basic-grey;
+    }
   }
 }
+
 
 .process__text {
   margin: 0;
@@ -87,27 +88,28 @@
     margin: 0;
     padding-top: 100px;
   }
-}
 
-.process__text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -80px;
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-width: $page-width-tablet) {
+  &::before {
+    content: "";
+    position: absolute;
     top: 0;
-    left: 0;
-    width: 80px;
-    height: 80px;
+    left: -80px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $page-width-tablet) {
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
+
 
 .process__item:nth-of-type(1) > .process__text:first-child::before {
   background-image: url("../../img/group1.svg");

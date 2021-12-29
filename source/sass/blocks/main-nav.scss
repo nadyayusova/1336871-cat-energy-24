@@ -175,15 +175,16 @@
     margin-left: $menu-item-gap;
     border: none;
   }
-}
 
-.main-nav__item:first-child {
-  min-height: 67px;
+  &:first-child {
+    min-height: 67px;
 
-  @media (max-width: $mobile-width-only) {
-    border-top: 1px solid #e6e6e6;
+    @media (max-width: $mobile-width-only) {
+      border-top: 1px solid #e6e6e6;
+    }
   }
 }
+
 
 .main-nav__link {
   font-family: "Oswald Medium", "Arial", sans-serif;

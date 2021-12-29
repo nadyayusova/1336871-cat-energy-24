@@ -1,3 +1,7 @@
+.address--special {
+  background-color: $basic-grey;
+}
+
 .address__inner {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -21,10 +25,6 @@
     background: $white;
     z-index: 20;
   }
-}
-
-.address--special {
-  background-color: $basic-grey;
 }
 
 .address__welcome-text {

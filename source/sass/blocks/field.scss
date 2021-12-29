@@ -4,14 +4,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
-}
 
-.field__label--radio {
-  color: $special-dark-grey-2;
-}
+  &--radio {
+    color: $special-dark-grey-2;
+  }
 
-.field__label--checkbox {
-  color: $black;
+  &--checkbox {
+    color: $black;
+  }
 }
 
 .field__text-input {
