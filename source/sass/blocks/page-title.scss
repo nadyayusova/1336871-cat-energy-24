@@ -1,23 +1,58 @@
 .page-title {
-  padding: 20px;
   border-top: 1px solid #d9d9d9;
+
+  &--index {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $basic-green-2;
+    background-image: linear-gradient(180deg, $basic-green-2 0%, $basic-green-2 62.92%, $white 62.92%, $white 100%);
+    border-top: none;
+
+    @media (min-width: $page-width-tablet) {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    @media (min-width: $page-width-desktop) {
+      background-color: $basic-green-2;
+      background-image: linear-gradient(270deg, $basic-green-2 0%, $basic-green-2 50%, $white 50%, $white 100%);
+    }
+  }
 }
 
-.page-title--index {
-  min-height: 480px;
-  background-color: $basic-green-2;
+
+.page-title__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(100px, auto) minmax(40px, auto) minmax(340px, auto);
+  align-items: end;
+  padding: 20px;
+
   background-image:  url("../../img/index-can.png"),
     url("../../img/index-green-cat.png");
-  background-position: top center, top center;
+  background-position: bottom 40px center, top center;
   background-repeat: no-repeat, no-repeat;
-  border-top: none;
 
   @media (min-width: $page-width-tablet) {
-    min-height: 810px;
+    grid-template-rows: minmax(160px, auto) minmax(70px, auto) minmax(580px, auto);
+    align-items: start;
+    padding-left: calc($page-padding-tablet + 87px);
+    padding-right: $page-padding-tablet;
+    background-image: url("../../img/index-can.png");
+    background-position: bottom center;
   }
 
   @media (min-width: $page-width-desktop) {
-    min-height: 696px;
+    grid-template-rows: minmax(120px, auto) minmax(20px, auto) minmax(239px, auto);
+    row-gap: 40px;
+    min-height: 694px;
+    margin-bottom: 62px;
+    padding-top: 225px;
+    padding-left: calc($page-padding-desktop + 80px);
+    padding-right: $page-padding-desktop;
+    background-image:  url("../../img/index-can.png"),
+      url("../../img/index-green-cat.png");
+    background-position: center, bottom right;
   }
 }
 
@@ -27,22 +62,51 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
+  text-align: center;
   color: $black;
+
+  @media (min-width: $page-width-tablet) {
+    text-align: start;
+  }
 }
 
 .page-title--index .page-title__caption {
   color: $white;
+
+  @media (min-width: $page-width-tablet) {
+    max-width: 450px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
 }
 
 .page-title__slogan {
+  justify-self: center;
+  margin: 0;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: $white;
+
+  @media (min-width: $page-width-tablet) {
+    justify-self: start;
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
 }
 
 .page-title__select-program-link {
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
+
+  @media (min-width: $page-width-tablet) {
+    justify-self: start;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -16,11 +16,12 @@
   @media (min-width: $page-width-desktop) {
     grid-template-areas: "title volume price button";
   }
+
+  &:first-of-type {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
-.related-product:first-of-type {
-  border-top: 1px solid #cdcdcd;
-}
 
 .related-product__name {
   grid-area: title;

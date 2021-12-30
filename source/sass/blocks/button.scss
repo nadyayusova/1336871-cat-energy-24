@@ -7,9 +7,27 @@
   color: $white;
   background-color: $basic-green;
   border: none;
-}
 
-.button--special {
-  color: $special-dark-grey;
-  background-color: $basic-grey;
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $basic-green-2;
+  }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &--special {
+    color: $special-dark-grey;
+    background-color: $basic-grey;
+  }
+
+  &--special:active {
+    color: rgba($special-dark-grey, 0.3);
+    background-color: $special-grey-2;
+  }
+
+  &--special:hover {
+    background-color: $special-grey-2;
+  }
 }

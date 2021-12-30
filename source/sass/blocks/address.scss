@@ -1,42 +1,62 @@
-.address {
-  display: grid;
-  grid-template-areas:
-    "w s"
-    "w c";
-  padding: 25px 20px;
-
-  @media (min-width: $page-width-desktop) {
-    position: absolute;
-    left: 110px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: $white;
-  }
-}
-
 .address--special {
   background-color: $basic-grey;
 }
 
+.address__inner {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas:
+    "w s"
+    "w c";
+  column-gap: 15px;
+  padding: 25px 20px;
+
+  @media (min-width: $page-width-tablet) {
+    row-gap: 30px;
+    padding: 50px 70px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    min-width: 570px;
+    min-height: 200px;
+    background: $white;
+    z-index: 20;
+  }
+}
+
 .address__welcome-text {
   grid-area: w;
-  width: 50%;
+  margin: 0;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $almost-black;
+
+  @media (min-width: $page-width-tablet) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .address__street,
 .address__city {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+
+  @media (min-width: $page-width-tablet) {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .address__street {

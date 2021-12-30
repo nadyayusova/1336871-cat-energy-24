@@ -1,17 +1,47 @@
 .example {
+  background-color: $slider-bg;
+
+  @media (min-width: $page-width-tablet) {
+    background: linear-gradient(0deg, $slider-bg 0%, $slider-bg 35%, $white 35%, $white 100%);
+  }
+
+  @media (min-width: $page-width-desktop) {
+    background: linear-gradient(0deg, $slider-bg 0%, $slider-bg 70%, $white 70%, $white 100%);
+  }
+}
+
+.example__inner {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
   padding: 25px 20px;
-  background-color: $slider-bg;
+
+  @media (min-width: $page-width-tablet) {
+    grid-template-rows: 145px 125px 80px 1fr;
+    min-height: 1080px;
+    padding-bottom: 56px;
+    padding-left: $page-padding-tablet;
+    padding-right: $page-padding-tablet;
+  }
 
   @media (min-width: $page-width-desktop) {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 436px 591px;
+    grid-template-rows: 170px minmax(100px, min-content) min-content;
+    column-gap: 190px;
+    row-gap: 70px;
+    min-height: 638px;
+    padding-left: $page-padding-desktop;
+    padding-right: $page-padding-desktop;
   }
 }
 
 .example__title {
+  margin: 0;
   color: $black;
+
+  @media (min-width: $page-width-tablet) {
+    align-self: center;
+  }
 
   @media (min-width: $page-width-desktop) {
     grid-column: 1 / 2;
@@ -19,11 +49,17 @@
 }
 
 .example__text {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+
+  @media (min-width: $page-width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   @media (min-width: $page-width-desktop) {
     grid-column: 1 / 2;
@@ -37,7 +73,16 @@
 }
 
 .example__slider {
+  @media (min-width: $page-width-tablet) {
+    align-self: end;
+  }
+
   @media (min-width: $page-width-desktop) {
     grid-column: 2 / 3;
+    grid-row: 1 / 4;
   }
+}
+
+.example__img-after {
+  display: none;
 }

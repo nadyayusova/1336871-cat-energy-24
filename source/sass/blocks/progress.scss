@@ -13,29 +13,91 @@
 
 .progress__list {
   display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $page-width-tablet) {
+    margin-right: auto;
+  }
+}
+
+.progress__item {
+  @media (min-width: $page-width-tablet) {
+    margin-right: 40px;
+  }
 }
 
 .progress__value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 124px;
+  min-height: 56px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: $page-width-tablet) {
+    min-width: 162px;
+    min-height: 77px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .progress__description {
+  width: min-content;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding: 0 15px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
+  background-color: $slider-bg;
+
+  @media (min-width: $page-width-tablet) {
+    width: max-content;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
 }
 
 .progress__expenses {
+  display: flex;
+  justify-content: space-between;
+  min-width: 188px;
+  margin: 20px auto;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
+
+  @media (min-width: $page-width-tablet) {
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    max-width: 180px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    justify-content: space-between;
+    max-width: 330px;
+    margin-top: 55px;
+  }
 }

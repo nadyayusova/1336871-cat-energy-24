@@ -5,8 +5,16 @@
   grid-gap: 20px;
   padding: 20px;
 
+  @media (min-width: $page-width-tablet) {
+    padding-left: $page-padding-tablet;
+    padding-right: $page-padding-tablet;
+  }
+
   @media (min-width: $page-width-desktop) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
+    grid-gap: 80px;
+    padding-left: $page-padding-desktop;
+    padding-right: $page-padding-desktop;
   }
 }
