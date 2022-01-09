@@ -8,9 +8,15 @@
 
   @media (min-width: $page-width-tablet) {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    padding-left: $page-padding-tablet;
+    padding-right: $page-padding-tablet;
   }
 
   @media (min-width: $page-width-desktop) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    padding-left: $page-padding-desktop;
+    padding-right: $page-padding-desktop;
   }
 }

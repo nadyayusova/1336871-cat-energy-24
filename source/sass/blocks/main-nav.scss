@@ -28,7 +28,7 @@
 .main-nav__controls {
   display: flex;
   justify-content: space-between;
-  min-height: 65px;
+  min-height: 66px;
   padding: 10px $page-padding-mobile;
 
   @media (min-width: $page-width-tablet) {
@@ -160,6 +160,32 @@
   @media (min-width: $page-width-desktop) {
     min-width: 478px + $menu-item-gap;
   }
+
+  &--index .main-nav__link {
+    @media (min-width: $page-width-desktop) {
+      color: $white;
+    }
+  }
+
+  &--index .main-nav__item--current .main-nav__link {
+    @media (min-width: $page-width-desktop) {
+      border-bottom: 2px solid $white;
+    }
+  }
+
+  &--index .main-nav__item:not(.main-nav__item--current) .main-nav__link {
+    &:active {
+      @media (min-width: $page-width-desktop) {
+        color: rgba($white, 0.3);
+      }
+    }
+
+    &:hover {
+      @media (min-width: $page-width-desktop) {
+        color: rgba($white, 0.6);
+      }
+    }
+  }
 }
 
 .main-nav__item {
@@ -204,17 +230,13 @@
   @media (min-width: $page-width-desktop) {
     font-size: 20px;
     line-height: 30px;
-    color: $white;
+    color: $black;
   }
 }
 
 .main-nav__item--current .main-nav__link {
   @media (min-width: $page-width-tablet) {
     border-bottom: 2px solid $basic-green;
-  }
-
-  @media (min-width: $page-width-desktop) {
-    border-bottom: 2px solid $white;
   }
 }
 
@@ -223,19 +245,11 @@
     @media (min-width: $page-width-tablet) {
       color: rgba($black, 0.3);
     }
-
-    @media (min-width: $page-width-desktop) {
-      color: rgba($white, 0.3);
-    }
   }
 
   &:hover {
     @media (min-width: $page-width-tablet) {
       color: rgba($black, 0.6);
-    }
-
-    @media (min-width: $page-width-desktop) {
-      color: rgba($white, 0.6);
     }
   }
 }

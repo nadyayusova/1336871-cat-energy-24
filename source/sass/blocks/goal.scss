@@ -1,13 +1,17 @@
 .goal {
-  width: 100%;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $page-width-tablet) {
+    margin-left: $form-padding-tablet;
+    margin-right: $form-padding-tablet;
+    padding-top: 20px;
     border: 1px solid #d9d9d9;
   }
 
   @media (min-width: $page-width-desktop) {
-    width: 50%;
+    width: 47%;
+    margin: 0;
+    padding: 25px 28px 10px;
   }
 }
 

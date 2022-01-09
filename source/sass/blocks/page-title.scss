@@ -1,19 +1,37 @@
 .page-title {
+  padding-top: 30px;
+  padding-bottom: 40px;
   border-top: 1px solid #d9d9d9;
+  padding-left: $page-padding-mobile;
+  padding-right: $page-padding-mobile;
+
+  @media (min-width: $page-width-tablet) {
+    padding-left: $page-padding-tablet;
+    padding-right: $page-padding-tablet;
+    border-top: none;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    padding-top: 160px;
+    padding-bottom: 30px;
+    padding-left: $page-padding-desktop;
+    padding-right: $page-padding-desktop;
+  }
 
   &--index {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     background-color: $basic-green-2;
     background-image: linear-gradient(180deg, $basic-green-2 0%, $basic-green-2 62.92%, $white 62.92%, $white 100%);
     border-top: none;
 
     @media (min-width: $page-width-tablet) {
+      padding: 0;
       background-color: transparent;
       background-image: none;
     }
 
     @media (min-width: $page-width-desktop) {
+      padding: 0;
       background-color: $basic-green-2;
       background-image: linear-gradient(270deg, $basic-green-2 0%, $basic-green-2 50%, $white 50%, $white 100%);
     }
@@ -66,6 +84,8 @@
   color: $black;
 
   @media (min-width: $page-width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
     text-align: start;
   }
 }
@@ -75,8 +95,6 @@
 
   @media (min-width: $page-width-tablet) {
     max-width: 450px;
-    font-size: 60px;
-    line-height: 60px;
     color: $black;
   }
 }

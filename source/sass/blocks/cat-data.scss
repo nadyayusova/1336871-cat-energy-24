@@ -1,5 +1,4 @@
 .cat-data {
-  width: 100%;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $page-width-tablet) {
@@ -7,7 +6,7 @@
   }
 
   @media (min-width: $page-width-desktop) {
-    width: 49%;
+    width: 47%;
   }
 }
 
