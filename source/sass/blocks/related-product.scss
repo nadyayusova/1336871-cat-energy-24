@@ -4,17 +4,26 @@
     "title  title"
     "volume price"
     "button button";
-  padding: 10px 20px 20px;
+  padding: 10px 0 20px;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $page-width-tablet) {
+    grid-template-columns: 1fr 150px 90px;
     grid-template-areas:
       "title  volume price"
       "button button button";
+    padding: 25px 38px 28px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 
   @media (min-width: $page-width-desktop) {
+    grid-template-columns: 1fr 244px 82px 244px;
     grid-template-areas: "title volume price button";
+    align-items: center;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
   }
 
   &:first-of-type {
@@ -25,31 +34,67 @@
 
 .related-product__name {
   grid-area: title;
+  margin: 0;
+  margin-bottom: 10px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+
+  @media (min-width: $page-width-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin: 0;
+  }
 }
 
 .related-product__volume,
 .related-product__price {
+  margin: 5px 0 15px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
+
+  @media (min-width: $page-width-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    justify-self: start;
+    margin: 0;
+  }
 }
 
 .related-product__volume {
   grid-area: volume;
+
+  @media (min-width: $page-width-tablet) {
+    justify-self: end;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    justify-self: start;
+  }
 }
 
 .related-product__price {
   grid-area: price;
+  justify-self: end;
+
+  @media (min-width: $page-width-desktop) {
+    justify-self: start;
+  }
 }
 
 .related-product__order-link {
   grid-area: button;
+  text-align: center;
 }

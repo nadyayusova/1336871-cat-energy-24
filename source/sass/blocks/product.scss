@@ -1,5 +1,6 @@
 .product {
   display: grid;
+  grid-template-columns: 140px 1fr;
   grid-template-areas:
     "picture title"
     "picture table"
@@ -8,13 +9,16 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $page-width-tablet) {
-    max-width: 324px;
-    background-color: $basic-grey;
+    grid-template-columns: 1fr;
+    grid-template-rows: 230px repeat(2, min-content);
     grid-template-areas:
       "picture"
       "title"
       "table"
       "button";
+    max-width: 324px;
+    padding: 40px;
+    background: linear-gradient(0deg, $basic-grey 0%, $basic-grey 80%, $white 80%, $white 100%);
   }
 
   @media (min-width: $page-width-desktop) {
@@ -22,30 +26,63 @@
   }
 
   &:first-of-type {
-    border-top: 1px solid #ebebeb;
+    @media (max-width: $mobile-width-only) {
+      border-top: 1px solid #ebebeb;
+    }
   }
 }
 
 
 .product__name {
   grid-area: title;
+
+  max-width: 70%;
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+
+  @media (min-width: $page-width-tablet) {
+    justify-self: center;
+    max-width: 60%;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .product__image {
   grid-area: picture;
+  justify-self: center;
+  align-self: center;
 }
 
 .product__options {
   grid-area: table;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  // grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.product__record {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $page-width-tablet) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $special-grey;
+  }
 }
 
 .product__description,
@@ -55,8 +92,18 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $page-width-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
+
+// .product__value {
+//   text-align: right;
+// }
 
 .product__order-link {
   grid-area: button;
+  text-align: center;
 }
