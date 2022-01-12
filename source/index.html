@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -96,8 +100,18 @@
           </div>
           <div class="example__slider slider">
             <div class="slider__sildes">
-              <img class="example__img-before slider__slide" src="img/before-mobile.png" alt="Фото кота до программы">
-              <img class="example__img-after slider__slide" src="img/after-mobile.png" alt="Фото кота после программы">
+              <picture class="example__img-before slider__slide slider__slide--before">
+                <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+                <img class="example__img-before slider__slide" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" width="280" height="232" alt="Фото кота до программы">
+              </picture>
+              <picture class="example__img-after slider__slide slider__slide--after">
+                <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+                <img class="example__img-after slider__slide" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" width="280" height="232" alt="Фото кота до программы">
+              </picture>
             </div>
             <div class="slider__controls">
               <label class="slider__label">
