@@ -23,6 +23,7 @@
 
   @media (min-width: $page-width-desktop) {
     max-width: 245px;
+    padding: 30px;
   }
 
   &:first-of-type {
@@ -59,13 +60,16 @@
   grid-area: picture;
   justify-self: center;
   align-self: center;
+
+  @media (min-width: $page-width-tablet) {
+    width: auto;
+  }
 }
 
 .product__options {
   grid-area: table;
 
   display: grid;
-  // grid-template-columns: repeat(2, 1fr);
   margin: 0;
   margin-bottom: 20px;
 
@@ -98,10 +102,6 @@
     line-height: 16px;
   }
 }
-
-// .product__value {
-//   text-align: right;
-// }
 
 .product__order-link {
   grid-area: button;
