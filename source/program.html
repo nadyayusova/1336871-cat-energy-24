@@ -17,9 +17,19 @@
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__controls container">
-        <a class="main-nav__logo-link" aria-label="Логотип Cat energy">
-          <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
-          <img class="main-nav__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy">
+        <a class="main-nav__logo-link" href="index.html" aria-label="Главная страница Cat energy" aria-label="Логотип Cat energy">
+          <svg class="main-nav__logo-image main-nav__logo-image--mobile" width="33" height="37" viewBox="0 0 34 38" role="img" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-mobile"></use>
+          </svg>
+          <svg class="main-nav__logo-image main-nav__logo-image--tablet" width="61" height="51" viewBox="0 0 61 51" role="img" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-tablet"></use>
+          </svg>
+          <svg class="main-nav__logo-image main-nav__logo-image--desktop" width="71" height="59" viewBox="0 0 71 59" role="img" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-desktop"></use>
+          </svg>
+          <svg class="main-nav__logo-text" width="101" height="18" viewBox="0 0 101 18" role="img" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
+          </svg>
         </a>
         <button class="main-nav__toggle" type="button" name="toggle-menu">
           <span class="visually-hidden">Меню</span>
@@ -84,7 +94,7 @@
       </fieldset>
 
       <fieldset class="owner-contacts fields-group">
-        <legend class="fields-group__legend">Контактные данные (владельца кота)</legend>
+        <legend class="fields-group__legend top-line">Контактные данные (владельца кота)</legend>
         <ul class="owner-contacts__fields fields-group__list">
           <li class="field">
             <label class="field__label" for="email-address">E-main:<sup>*</sup></label>
@@ -100,13 +110,13 @@
       </fieldset>
 
       <fieldset class="comments fields-group">
-        <legend class="fields-group__legend">Комментарий</legend>
+        <legend class="fields-group__legend top-line">Комментарий</legend>
         <textarea class="fields-group__text-input fields-group__text-input--big" name="cat-habits"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="additions fields-group">
-        <legend class="fields-group__legend">Дополнительно</legend>
+        <legend class="fields-group__legend top-line">Дополнительно</legend>
         <ul class="additions__fields fields-group__list">
           <li class="field">
             <input class="visually-hidden field__checkbox" type="checkbox" id="sweetener" name="additions-sweetener" checked>
@@ -148,29 +158,42 @@
     </div>
     <div class="contacts">
       <div class="contacts__inner container">
-        <a class="contacts__logo-link logo-link">
-          <img src="img/logo-text.svg" width="128" height="24" alt="Cat energy">
+        <a class="contacts__logo-link logo-link" href="index.html" aria-label="Главная страница Cat energy">
+          <svg width="128" height="24" viewBox="0 0 101 18" role="img" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
+          </svg>
         </a>
         <ul class="socials">
           <li class="socials__item">
             <a class="socials__link socials__link--vk" href="https://vk.com" target="_blank">
+              <svg width="23" height="13" viewBox="0 0 23 13" role="img" aria-label="Ссылка на Вконтакте" focusable="false">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--instagram" href="https://instagram.com" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 16 16" role="img" aria-label="Ссылка на Инстаграм" focusable="false">
+                <use xlink:href="img/sprite.svg#ig-icon"></use>
+              </svg>
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--facebook" href="https://facebook.com" target="_blank">
+              <svg width="13" height="20" viewBox="0 0 13 20" role="img" aria-label="Ссылка на Фэйсбук" focusable="false">
+                <use xlink:href="img/sprite.svg#fb-icon"></use>
+              </svg>
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
         </ul>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <p class="copyright__text">HTML Academy</p>
-          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 60 60" role="img" aria-label="Разработано HTML Academy" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>

@@ -39,14 +39,55 @@
 
 .main-nav__logo-link {
   display: flex;
+  justify-content: start;
+  align-items: center;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .main-nav__logo-image {
+  height: auto;
   margin-right: 55px;
 
   @media (min-width: $page-width-tablet) {
     margin-right: 12px;
   }
+}
+
+.main-nav__logo-image--mobile {
+  @media (min-width: $page-width-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__logo-image--tablet {
+  display: none;
+
+  @media (min-width: $page-width-tablet) {
+    display: block;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    display: none;
+  }
+}
+
+.main-nav__logo-image--desktop {
+  display: none;
+
+  @media (min-width: $page-width-desktop) {
+    display: block;
+  }
+}
+
+.main-nav__logo-text {
+  height: auto;
 }
 
 .main-nav__toggle {
