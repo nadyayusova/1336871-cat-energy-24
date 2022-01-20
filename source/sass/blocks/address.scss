@@ -1,5 +1,9 @@
-.address--special {
-  background-color: $basic-grey;
+.address {
+  position: relative;
+
+  &--special {
+    background-color: $basic-grey;
+  }
 }
 
 .address__inner {
@@ -18,7 +22,7 @@
 
   @media (min-width: $page-width-desktop) {
     position: absolute;
-    left: 110px;
+    left: calc(50% - 610px);
     top: 95px;
     min-width: 570px;
     min-height: 200px;

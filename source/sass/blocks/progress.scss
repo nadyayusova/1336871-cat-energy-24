@@ -70,6 +70,10 @@
     line-height: 14px;
     background-color: $white;
   }
+
+  @media (min-width: $page-width-desktop) {
+    background-color: $slider-bg;
+  }
 }
 
 .progress__expenses {
