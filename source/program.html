@@ -8,7 +8,7 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -96,15 +96,21 @@
       <fieldset class="owner-contacts fields-group">
         <legend class="fields-group__legend top-line">Контактные данные (владельца кота)</legend>
         <ul class="owner-contacts__fields fields-group__list">
-          <li class="field">
+          <li class="owner-contacts__field field">
             <label class="field__label" for="email-address">E-main:<sup>*</sup></label>
-            <input class="field__text-input field__text-input--icon field__text-input--email" type="email"
-              id="email-address" name="email-address" placeholder="kuklachev@gmail.com" required>
+            <input class="owner-contacts__input field__text-input field__text-input--icon" type="email"
+            id="email-address" name="email-address" placeholder="kuklachev@gmail.com" required>
+            <svg class="owner-contacts__icon owner-contacts__icon--email" width="19" height="14" viewBox="0 0 19 14" role="img" aria-label="Фоновое изображение" focusable="false">
+              <use xlink:href="img/sprite.svg#envelope"></use>
+            </svg>
           </li>
-          <li class="field">
+          <li class="owner-contacts__field field">
             <label class="field__label" for="phone-no">Tелефон:<sup>*</sup></label>
-            <input class="field__text-input field__text-input--icon field__text-input--tel" type="tel" id="phone-no"
-              name="phone-no" placeholder="8 (960) 900-60-90" required>
+            <input class="owner-contacts__input field__text-input field__text-input--icon" type="tel" id="phone-no"
+            name="phone-no" placeholder="8 (960) 900-60-90" required>
+            <svg class="owner-contacts__icon owner-contacts__icon--phone" width="20" height="21" viewBox="0 0 20 21" role="img" aria-label="Фоновое изображение" focusable="false">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
           </li>
         </ul>
       </fieldset>
@@ -203,7 +209,7 @@
   src="https://maps.googleapis.com/maps/api/js?callback=initMap"
   async
 ></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

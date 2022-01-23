@@ -26,33 +26,43 @@
   &--vk {
     width: 23px;
     height: 16px;
+
+    & svg {
+      fill: $special-grey-2-1;
+    }
+
+    &:hover svg {
+      fill: $basic-green;
+    }
   }
 
   &--instagram {
     width: 16px;
     height: 16px;
+
+    & svg {
+      fill: $special-grey-2-1;
+    }
+
+    &:hover svg {
+      fill: $basic-green;
+    }
   }
 
   &--facebook {
     width: 22px;
     height: 22px;
-  }
 
-  & svg {
-    fill: $special-grey-2-1;
-    stroke: $special-grey-2-1;
-  }
+    & svg {
+      stroke: $special-grey-2-1;
+    }
 
-  &:hover {
-    svg {
-      fill: $basic-green;
+    &:hover svg {
       stroke: $basic-green;
     }
   }
 
-  &:active {
-    svg {
-      opacity: 0.3;
-    }
+  &:active svg {
+    opacity: 0.3;
   }
 }

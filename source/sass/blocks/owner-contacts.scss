@@ -7,3 +7,43 @@
     display: flex;
   }
 }
+
+.owner-contacts__field {
+  position: relative;
+}
+
+.owner-contacts__icon {
+  position: absolute;
+  right: 10px;
+  z-index: 5;
+
+  &--email {
+    stroke: $special-dark-grey-2;
+  }
+
+  &--phone {
+    fill: $black;
+  }
+}
+
+.owner-contacts__input:focus {
+  background-color: transparent;
+
+  & + .owner-contacts__icon--email {
+    stroke: $basic-green;
+  }
+
+  & + .owner-contacts__icon--phone {
+    fill: $basic-green;
+  }
+}
+
+.owner-contacts__input:invalid {
+  & + .owner-contacts__icon--email {
+    stroke: $status-error;
+  }
+
+  & + .owner-contacts__icon--phone {
+    fill: $status-error;
+  }
+}

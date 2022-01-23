@@ -39,7 +39,7 @@
 
 .main-nav__logo-link {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 
   &:active {
@@ -103,12 +103,6 @@
   }
 }
 
-// если будем стилизовать кнопку меню
-// .main-nav__toggle:hover,
-// .main-nav__toggle:active {
-//   background-color: ;
-// }
-
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -119,14 +113,6 @@
   background-color: $black;
   box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
-
-// если будем стилизовать кнопку меню
-// .main-nav--closed .main-nav__toggle:active::before {
-//   background-color: fade(#ffffff, 30%);
-//   box-shadow:
-//     0 8px 0 0 fade(#ffffff, 30%),
-//     0 16px 0 0 fade(#ffffff, 30%);
-// }
 
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__controls {
@@ -159,12 +145,6 @@
     &::after {
       transform: rotate(-45deg);
     }
-
-    // если будем стилизовать кнопку меню
-    // &:active::before,
-    // &:active::after {
-    //   background-color: fade(#ffffff, 30%);
-    // }
   }
 }
 
