@@ -26,7 +26,7 @@
 
 .progress__item {
   @media (min-width: $page-width-tablet) {
-    margin-right: 40px;
+    margin-right: 42px;
   }
 }
 
@@ -35,26 +35,27 @@
   justify-content: center;
   align-items: center;
   min-width: 124px;
-  min-height: 56px;
+  min-height: 55px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 23px;
+  text-transform: uppercase;
   color: $black;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
   @media (min-width: $page-width-tablet) {
     min-width: 162px;
-    min-height: 77px;
+    min-height: 72px;
     font-size: 30px;
-    line-height: 37px;
+    line-height: 39px;
   }
 }
 
 .progress__description {
   width: min-content;
   margin: 0 auto;
-  margin-top: -10px;
+  margin-top: -9px;
   padding: 0 15px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
@@ -72,6 +73,7 @@
   }
 
   @media (min-width: $page-width-desktop) {
+    margin-top: -8px;
     background-color: $slider-bg;
   }
 }
@@ -83,7 +85,7 @@
   margin: 20px auto;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 19px;
   text-transform: uppercase;
   text-align: center;
   color: $black;
@@ -91,17 +93,17 @@
   @media (min-width: $page-width-tablet) {
     flex-wrap: wrap;
     justify-content: end;
-    align-items: center;
-    align-content: center;
+    align-content: flex-start;
     max-width: 180px;
     margin: 0;
+    margin-top: 8px;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 28px;
   }
 
   @media (min-width: $page-width-desktop) {
     justify-content: space-between;
-    max-width: 330px;
-    margin-top: 55px;
+    max-width: 328px;
+    margin-top: 50px;
   }
 }

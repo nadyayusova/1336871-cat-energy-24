@@ -91,7 +91,7 @@
 
 .field__checkbox {
   &:checked + .field__label::before {
-    background-image: url("../../img/check.svg");
+    background-image: url("../img/check.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 18px;

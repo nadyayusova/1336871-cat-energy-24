@@ -23,9 +23,14 @@ $rouns-thumb-max: 96%;
     @media (min-width: $page-width-tablet) {
       position: absolute;
       left: 0;
-      bottom: 0;
-      clip: rect(0, 294px, 511px, 0);
+      right: -57px;
+      bottom: 16px;
+      clip: rect(0, 296px, 511px, 0);
       z-index: 20;
+    }
+
+    @media (min-width: $page-width-tablet) {
+      bottom: 11px;
     }
   }
 
@@ -36,9 +41,14 @@ $rouns-thumb-max: 96%;
 
     @media (min-width: $page-width-tablet) {
       position: absolute;
-      right: 0;
-      bottom: 0;
-      clip: rect(0, 592px, 511px, 247px);
+      left: 57px;
+      right: -4px;
+      bottom: 3px;
+      clip: rect(0, 592px, 511px, 237px);
+    }
+
+    @media (min-width: $page-width-tablet) {
+      bottom: -3px;
     }
   }
 }
@@ -47,6 +57,13 @@ $rouns-thumb-max: 96%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 19px;
+
+  @media (min-width: $page-width-desktop) {
+    margin-top: 26px;
+    margin-bottom: 29px;
+  }
 }
 
 .slider__label {
@@ -76,8 +93,8 @@ $rouns-thumb-max: 96%;
   position: relative;
   width: 86px;
   height: 14px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 18px;
+  margin-right: 18px;
   padding: 3px 5px;
   background-color: $white;
   border: 1px solid $special-grey;
@@ -86,6 +103,8 @@ $rouns-thumb-max: 96%;
   @media (min-width: $page-width-tablet) {
     width: 426px;
     height: 6px;
+    margin-left: 23px;
+    margin-right: 23px;
     padding: 0;
     background-color: #dcdcdc;
     border: none;

@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
+  padding: 21px 0;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: $page-width-tablet) {
@@ -32,7 +32,11 @@
   color: $special_dark-grey;
 
   @media (min-width: $page-width-tablet) {
-    margin-right: 20px;
+    margin-right: 24px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin-right: 22px;
   }
 }
 
