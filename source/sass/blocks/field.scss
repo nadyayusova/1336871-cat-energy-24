@@ -91,7 +91,7 @@
 
 .field__checkbox {
   &:checked + .field__label::before {
-    background-image: url("../../img/check.svg");
+    background-image: url("../img/check.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 18px;
@@ -127,16 +127,6 @@
 
   &--icon {
     padding-right: 35px;
-    background-position: right center;
-    background-repeat: no-repeat;
-  }
-
-  &--email {
-    background-image: url("../../img/envelope.svg");
-  }
-
-  &--tel {
-    background-image: url("../../img/phone.svg");
   }
 
   &:hover {

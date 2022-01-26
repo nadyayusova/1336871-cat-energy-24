@@ -12,12 +12,12 @@
   grid-template-areas:
     "w s"
     "w c";
-  column-gap: 15px;
-  padding: 25px 20px;
+  column-gap: 18px;
+  padding: 25px 20px 27px;
 
   @media (min-width: $page-width-tablet) {
-    row-gap: 30px;
-    padding: 50px 70px;
+    row-gap: 19px;
+    padding: 57px 70px 61px;
   }
 
   @media (min-width: $page-width-desktop) {
@@ -26,6 +26,8 @@
     top: 95px;
     min-width: 570px;
     min-height: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
     background: $white;
     z-index: 20;
   }
@@ -43,7 +45,8 @@
 
   @media (min-width: $page-width-tablet) {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 26px;
+    margin-top: 3px;
   }
 }
 
@@ -60,6 +63,11 @@
   @media (min-width: $page-width-tablet) {
     font-size: 16px;
     text-align: right;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    padding-left: 79px;
+    text-align: left;
   }
 }
 

@@ -12,7 +12,7 @@
   @media (min-width: $page-width-tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px $page-padding-tablet;
+    padding: 56px $page-padding-tablet;
   }
 
   @media (min-width: $page-width-desktop) {
@@ -25,7 +25,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 95px;
+  min-height: 90px;
+  margin-top: 5px;
   padding: 20px 0;
 
   @media (min-width: $page-width-tablet) {

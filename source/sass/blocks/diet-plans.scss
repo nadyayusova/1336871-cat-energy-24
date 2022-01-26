@@ -6,6 +6,8 @@
   padding: 20px;
 
   @media (min-width: $page-width-tablet) {
+    grid-gap: 30px;
+    padding-top: 0;
     padding-left: $page-padding-tablet;
     padding-right: $page-padding-tablet;
   }

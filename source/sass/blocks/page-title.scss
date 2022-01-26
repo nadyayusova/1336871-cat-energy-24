@@ -21,15 +21,15 @@
   &--index {
     padding: 0;
     background-color: $basic-green-2;
-    background-image: url("../../img/index-back-mobile.jpg"),
-      linear-gradient(180deg, $basic-green-2 0%, $basic-green-2 62.92%, $white 62.92%, $white 100%);
+    background-image: url("../img/index-back-mobile.jpg"),
+      linear-gradient(180deg, $basic-green-2 0%, $basic-green-2 63%, $white 63%, $white 100%);
     background-position: right top, center;
     background-repeat: no-repeat, no-repeat;
     border-top: none;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-back-mobile@2x.jpg"),
-        linear-gradient(180deg, $basic-green-2 0%, $basic-green-2 62.92%, $white 62.92%, $white 100%);
+      background-image: url("../img/index-back-mobile@2x.jpg"),
+        linear-gradient(180deg, $basic-green-2 0%, $basic-green-2 63%, $white 63%, $white 100%);
       background-size: $page-width-mobile auto, 100% auto;
     }
 
@@ -42,13 +42,13 @@
     @media (min-width: $page-width-desktop) {
       padding: 0;
       background-color: $basic-green-2;
-      background-image: url("../../img/index-back-desktop.jpg"),
+      background-image: url("../img/index-back-desktop.jpg"),
         linear-gradient(270deg, $basic-green-2 0%, $basic-green-2 50%, $white 50%, $white 100%);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/index-back-desktop@2x.jpg"),
+        background-image: url("../img/index-back-desktop@2x.jpg"),
           linear-gradient(270deg, $basic-green-2 0%, $basic-green-2 50%, $white 50%, $white 100%);
-        background-size: $page-width-desktop auto, 100% auto;
+        background-size: 720px auto, 100% auto;
       }
     }
   }
@@ -58,47 +58,48 @@
 .page-title__inner {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(100px, auto) minmax(40px, auto) minmax(340px, auto);
+  grid-template-rows: minmax(79px, auto) minmax(38px, auto) minmax(342px, auto);
   align-items: end;
-  padding: 20px;
+  padding: 20px 20px 0;
 
-  background-image: url("../../img/index-can-mobile.png");
-  background-position: bottom 40px center;
+  background-image: url("../img/index-can-mobile.png");
+  background-position: bottom 43px center;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/index-can-mobile@2x.png");
-    background-size: $page-width-mobile auto;
+    background-image: url("../img/index-can-mobile@2x.png");
+    background-size: calc($page-width-mobile - $page-padding-mobile * 2) auto;
   }
 
   @media (min-width: $page-width-tablet) {
-    grid-template-rows: minmax(160px, auto) minmax(70px, auto) minmax(580px, auto);
+    grid-template-rows: minmax(162px, auto) minmax(68px, auto) minmax(580px, auto);
     align-items: start;
+    padding-top: 31px;
     padding-left: calc($page-padding-tablet + 87px);
     padding-right: $page-padding-tablet;
-    background-image: url("../../img/index-can-tablet.png");
+    background-image: url("../img/index-can-tablet.png");
     background-position: bottom center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-can-tablet@2x.png");
-      background-size: $page-width-tablet auto;
+      background-image: url("../img/index-can-tablet@2x.png");
+      background-size: calc($page-width-tablet - $page-padding-tablet * 2)  auto;
     }
   }
 
   @media (min-width: $page-width-desktop) {
-    grid-template-rows: minmax(120px, auto) minmax(20px, auto) minmax(239px, auto);
+    grid-template-rows: minmax(120px, auto) minmax(32px, auto) minmax(239px, auto);
     row-gap: 40px;
     min-height: 694px;
-    margin-bottom: 62px;
-    padding-top: 225px;
+    margin-bottom: 82px;
+    padding-top: 223px;
     padding-left: calc($page-padding-desktop + 80px);
     padding-right: $page-padding-desktop;
-    background-image: url("../../img/index-can-desktop.png");
-    background-position: center;
+    background-image: url("../img/index-can-desktop.png");
+    background-position: right 329px top 140px;
+    background-size: 552px 500px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/index-can-desktop@2x.png");
-      background-size: $page-width-desktop auto;
     }
   }
 }
@@ -133,27 +134,37 @@
   margin: 0;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 12px;
   text-transform: uppercase;
   color: $white;
 
   @media (min-width: $page-width-tablet) {
     justify-self: start;
     max-width: 450px;
+    margin-left: 2px;
     font-size: 20px;
     line-height: 20px;
     color: $black;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin-left: 0;
   }
 }
 
 .page-title__select-program-link {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 19px;
   text-align: center;
 
   @media (min-width: $page-width-tablet) {
     justify-self: start;
+    margin-left: 4px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin-left: 0;
   }
 }

@@ -15,18 +15,27 @@
     padding: 40px 52px 55px;
   }
 
+  &::before {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   &--slimming::before {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 21px;
+    left: 21px;
     width: 50px;
     height: 53px;
-    background-image: url("../../img/cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
 
     @media (min-width: $page-width-tablet) {
       right: 62px;
       bottom: 80px;
+      left: unset;
+      top: auto;
       width: 200px;
       height: 211px;
     }
@@ -34,6 +43,8 @@
     @media (min-width: $page-width-desktop) {
       top: 41px;
       left: 52px;
+      right: unset;
+      bottom: auto;
       width: 100px;
       height: 106px;
     }
@@ -46,47 +57,34 @@
     left: 13px;
     width: 67px;
     height: 50px;
-    background-image: url("../../img/cat-gain.svg");
+    background-image: url("../img/cat-gain.svg");
 
     @media (min-width: $page-width-tablet) {
       right: 28px;
       bottom: 80px;
+      left: unset;
+      top: auto;
       width: 268px;
       height: 200px;
     }
 
     @media (min-width: $page-width-desktop) {
-      top: 47px;
-      left: 33px;
-      width: 134px;
-      height: 100px;
-    }
-  }
-
-  &::before {
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-width: $page-width-tablet) {
-      left: unset;
-      top: auto;
-    }
-
-    @media (min-width: $page-width-desktop) {
+      top: 46px;
+      left: 34px;
       right: unset;
       bottom: auto;
+      width: 134px;
+      height: 100px;
     }
   }
 }
 
 .plan__name {
-  margin: 10px 0 20px 70px;
+  margin: 10px 0 28px 70px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 38px;
   text-transform: uppercase;
   color: $black;
 
@@ -99,13 +97,14 @@
 
   @media (min-width: $page-width-desktop) {
     margin-left: 162px;
-    margin-bottom: 70px;
+    margin-top: 37px;
+    margin-bottom: 75px;
   }
 }
 
 .plan__description {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -129,7 +128,8 @@
 .plan__catalog-link {
   position: relative;
   width: max-content;
-  margin-top: 15px;
+  margin-top: 19px;
+  margin-bottom: 2px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -138,13 +138,13 @@
 
   @media (min-width: $page-width-tablet) {
     max-width: 340px;
-    margin-top: 48px;
+    margin-top: 52px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $page-width-desktop) {
-    margin-top: 23px;
+    margin-top: 24px;
   }
 
   &::after {
@@ -155,11 +155,16 @@
     display: inline-block;
     width: 24px;
     height: 12px;
-    background-image: url("../../img/arrow.svg");
+    background-image: url("../img/arrow.svg");
 
     @media (min-width: $page-width-tablet) {
+      top: 9px;
+      left: 132px;
+    }
+
+    @media (min-width: $page-width-desktop) {
       top: 10px;
-      left: 120px;
+      left: 133px;
     }
   }
 
@@ -174,6 +179,6 @@
   &:hover::after {
     width: 32px;
     height: 12px;
-    background-image: url("../../img/arrow-long.svg");
+    background-image: url("../img/arrow-long.svg");
   }
 }
