@@ -1,12 +1,17 @@
 .cat-data {
+  margin-bottom: 22px;
+  padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $page-width-tablet) {
+    margin-bottom: 50px;
     border: none;
   }
 
   @media (min-width: $page-width-desktop) {
     width: 47%;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -14,4 +19,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  & :last-child {
+    margin-bottom: 0;
+  }
 }

@@ -1,5 +1,13 @@
 .additions {
-  width: 100%;
+  margin-bottom: 22px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin-bottom: 28px;
+  }
 }
 
 .additions__fields {
@@ -11,9 +19,19 @@
 
   @media (min-width: $page-width-tablet) {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
   }
 
   @media (min-width: $page-width-desktop) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 82px;
+  }
+}
+
+.additions__field {
+  margin-bottom: 14px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 34px;
   }
 }

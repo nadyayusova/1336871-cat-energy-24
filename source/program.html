@@ -8,6 +8,9 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/main.min.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -51,7 +54,7 @@
 
   <main class="page-main">
     <section class="page-title container">
-      <h1 class="page-title__caption">Подбор программы</h1>
+      <h1 class="page-title__caption page-title__caption--program">Подбор программы</h1>
     </section>
 
     <form class="form container" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -78,15 +81,15 @@
       <fieldset class="goal fields-group">
         <legend class="visually-hidden">Цель плана питания</legend>
         <ul class="goal__fields fields-group__list">
-          <li class="field">
+          <li class="goal__field field">
             <input class="visually-hidden field__radio" type="radio" id="slimming" name="plan-goal" value="slimming" checked>
             <label class="field__label field__label--radio" for="slimming">Похудение</label>
           </li>
-          <li class="field">
+          <li class="goal__field field">
             <input class="visually-hidden field__radio" type="radio" id="gaining" name="plan-goal" value="gaining">
             <label class="field__label field__label--radio" for="gaining">Набор массы</label>
           </li>
-          <li class="field">
+          <li class="goal__field field">
             <input class="visually-hidden field__radio" type="radio" id="unknown" name="plan-goal" value="unknown">
             <label class="field__label field__label--radio" for="unknown">Не знаю (нужен ваш совет)</label>
           </li>
@@ -94,10 +97,10 @@
       </fieldset>
 
       <fieldset class="owner-contacts fields-group">
-        <legend class="fields-group__legend top-line">Контактные данные (владельца кота)</legend>
+        <legend class="owner-contacts__legend fields-group__legend top-line">Контактные данные (владельца кота)</legend>
         <ul class="owner-contacts__fields fields-group__list">
           <li class="owner-contacts__field field">
-            <label class="field__label" for="email-address">E-main:<sup>*</sup></label>
+            <label class="field__label" for="email-address">E-mail:<sup>*</sup></label>
             <input class="owner-contacts__input field__text-input field__text-input--icon" type="email"
             id="email-address" name="email-address" placeholder="kuklachev@gmail.com" required>
             <svg class="owner-contacts__icon owner-contacts__icon--email" width="19" height="14" viewBox="0 0 19 14" role="img" aria-label="Фоновое изображение" focusable="false">
@@ -116,7 +119,7 @@
       </fieldset>
 
       <fieldset class="comments fields-group">
-        <legend class="fields-group__legend top-line">Комментарий</legend>
+        <legend class="comments__legend fields-group__legend top-line">Комментарий</legend>
         <textarea class="fields-group__text-input fields-group__text-input--big" name="cat-habits"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
@@ -124,19 +127,19 @@
       <fieldset class="additions fields-group">
         <legend class="fields-group__legend top-line">Дополнительно</legend>
         <ul class="additions__fields fields-group__list">
-          <li class="field">
+          <li class="additions__field field">
             <input class="visually-hidden field__checkbox" type="checkbox" id="sweetener" name="additions-sweetener" checked>
             <label class="field__label field__label--checkbox" for="sweetener">Сахарозаменитель</label>
           </li>
-          <li class="field">
+          <li class="additions__field field">
             <input class="visually-hidden field__checkbox" type="checkbox" id="water" name="additions-water">
             <label class="field__label field__label--checkbox" for="water">Питьевая вода</label>
           </li>
-          <li class="field">
+          <li class="additions__field field">
             <input class="visually-hidden field__checkbox" type="checkbox" id="milk" name="additions-milk">
             <label class="field__label field__label--checkbox" for="milk">Молоко</label>
           </li>
-          <li class="field">
+          <li class="additions__field field">
             <input class="visually-hidden field__checkbox" type="checkbox" id="vitamins" name="additions-vitamins">
             <label class="field__label field__label--checkbox" for="vitamins">Витамины</label>
           </li>
@@ -151,7 +154,7 @@
   </main>
 
   <footer class="page-footer">
-    <address class="address">
+    <address class="address address--special">
       <div class="container">
         <div class="address__inner">
           <p class="address__welcome-text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
@@ -197,7 +200,7 @@
         </ul>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <p class="copyright__text">HTML Academy</p>
-          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 60 60" role="img" aria-label="Разработано HTML Academy" focusable="false">
+          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" role="img" aria-label="Разработано HTML Academy" focusable="false">
             <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>

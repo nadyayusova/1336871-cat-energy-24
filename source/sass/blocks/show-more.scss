@@ -3,19 +3,26 @@
   padding: 20px;
 
   @media (min-width: $page-width-tablet) {
-    margin-top: 107px;
-    padding: 40px;
+    display: grid;
+    grid-template-rows: 1fr 123px min-content;
+    margin-top: 122px;
+    padding: 36px;
     border: 2px solid $basic-grey;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    grid-template-rows: 1fr 120px min-content;
+    padding-bottom: 40px;
   }
 }
 
 .show-more__name {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
   text-transform: uppercase;
   text-align: center;
   color: $almost-black;
@@ -25,22 +32,40 @@
     display: block;
     width: 30px;
     height: 30px;
-    margin: 0 auto 20px;
+    margin: 5px auto 22px;
     background-image: url("../img/plus.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $page-width-tablet) {
+      width: 60px;
+      height: 60px;
+      margin-top: 14px;
+      margin-bottom: 49px;
+      background-image: url("../img/plus-tablet.svg");
+    }
+
+    @media (min-width: $page-width-desktop) {
+      margin-top: 11px;
+    }
   }
 
   @media (min-width: $page-width-tablet) {
+    margin: 0;
+    padding: 0 50px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    padding: 0;
   }
 }
 
 .show-more__text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
@@ -49,11 +74,23 @@
   text-align: center;
 
   @media (min-width: $page-width-tablet) {
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin-top: -2px;
+    padding: 0;
   }
 }
 
 .show-more__button {
   width: 100%;
+  margin-bottom: 4px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 0;
+  }
 }
