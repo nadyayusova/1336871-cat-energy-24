@@ -1,3 +1,19 @@
 .comments {
-  width: 100%;
+  margin-bottom: 14px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin-bottom: 58px;
+  }
+}
+
+.comments__legend {
+  margin-bottom: 34px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 71px;
+  }
 }

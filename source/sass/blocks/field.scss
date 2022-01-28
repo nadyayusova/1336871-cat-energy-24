@@ -1,12 +1,16 @@
 .field {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 18px;
+  }
 }
 
 .field__label {
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 14px;
 
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
@@ -14,9 +18,20 @@
   text-transform: uppercase;
   color: $special_dark-grey;
 
+  @media (min-width: $page-width-tablet) {
+    margin-right: 21px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $page-width-desktop) {
+    margin-right: 24px;
+  }
+
   &--radio {
     display: flex;
     align-items: center;
+    margin-right: 0;
     color: $special-dark-grey-2;
   }
 
@@ -25,11 +40,18 @@
     display: block;
     width: 30px;
     height: 30px;
-    margin-right: 20px;
+    margin-right: 15px;
     background-color: $basic-green;
     border-radius: 50%;
     box-shadow: inset 0 0 0 15px $white, 0 0 0 1px $special-grey;
     cursor: pointer;
+
+    @media (min-width: $page-width-tablet) {
+      width: 38px;
+      height: 38px;
+      margin-right: 21px;
+      box-shadow: inset 0 0 0 20px $white, 0 0 0 1px $special-grey;
+    }
   }
 
   &--radio:hover::before {
@@ -49,12 +71,18 @@
   &--checkbox::before {
     content: "";
     display: block;
-    width: 26px;
-    height: 26px;
-    margin-right: 20px;
+    width: 28px;
+    height: 28px;
+    margin-right: 18px;
     background-color: $white;
     box-shadow: 0 0 0 1px $special-grey;
     cursor: pointer;
+
+    @media (min-width: $page-width-tablet) {
+      width: 38px;
+      height: 38px;
+      margin-right: 21px;
+    }
   }
 
   &--checkbox:hover::before {
@@ -72,15 +100,15 @@
 
 .field__radio {
   &:checked + .field__label::before {
-    box-shadow: inset 0 0 0 8px $white, 0 0 0 1px $special-grey;
+    box-shadow: inset 0 0 0 10px $white, 0 0 0 1px $special-grey;
   }
 
   &:checked:hover + .field__label::before {
-    box-shadow: inset 0 0 0 8px $white, 0 0 0 1px #bababa;
+    box-shadow: inset 0 0 0 10px $white, 0 0 0 1px #bababa;
   }
 
   &:checked:focus + .field__label::before {
-    box-shadow: inset 0 0 0 8px $white, 0 0 0 2px $special-dark-grey;
+    box-shadow: inset 0 0 0 10px $white, 0 0 0 2px $special-dark-grey;
   }
 
   &:disabled + .field__label,
@@ -125,8 +153,13 @@
   outline: 0;
   border: 1px solid #e7e7e7;
 
+  @media (min-width: $page-width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &--icon {
-    padding-right: 35px;
+    padding-right: 40px;
   }
 
   &:hover {

@@ -1,17 +1,20 @@
 .goal {
+  margin-bottom: 21px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $page-width-tablet) {
     margin-left: $form-padding-tablet;
     margin-right: $form-padding-tablet;
-    padding-top: 20px;
+    margin-bottom: 70px;
+    padding: 25px 29px 10px;
     border: 1px solid #d9d9d9;
   }
 
   @media (min-width: $page-width-desktop) {
     width: 47%;
     margin: 0;
-    padding: 25px 28px 10px;
+    padding: 26px 32px 0;
   }
 }
 
@@ -19,4 +22,12 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.goal__field {
+  margin-bottom: 13px;
+
+  @media (min-width: $page-width-tablet) {
+    margin-bottom: 15px;
+  }
 }

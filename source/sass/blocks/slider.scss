@@ -29,7 +29,7 @@ $rouns-thumb-max: 96%;
       z-index: 20;
     }
 
-    @media (min-width: $page-width-tablet) {
+    @media (min-width: $page-width-desktop) {
       bottom: 11px;
     }
   }
@@ -47,7 +47,7 @@ $rouns-thumb-max: 96%;
       clip: rect(0, 592px, 511px, 237px);
     }
 
-    @media (min-width: $page-width-tablet) {
+    @media (min-width: $page-width-desktop) {
       bottom: -3px;
     }
   }

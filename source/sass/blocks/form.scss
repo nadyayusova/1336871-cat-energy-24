@@ -11,7 +11,9 @@
 
 .form__suggestion {
   width: 100%;
-  padding: 0 $page-padding-mobile 35px;
+  margin-top: -4px;
+  margin-bottom: 0;
+  padding: 0 $page-padding-mobile 39px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -20,17 +22,22 @@
   color: $black;
 
   @media (min-width: $page-width-tablet) {
+    margin-top: 12px;
+    margin-bottom: 65px;
     padding: 0 $form-padding-tablet;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $page-width-desktop) {
+    margin-top: 11px;
     padding: 0;
   }
 }
 
 .form__helper {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: center;
   padding-left: $page-padding-mobile;
   padding-right: $page-padding-mobile;
@@ -39,6 +46,7 @@
     display: grid;
     grid-template-columns: 282px 1fr;
     column-gap: 60px;
+    margin-bottom: 72px;
     padding-left: $form-padding-tablet;
     padding-right: $form-padding-tablet;
   }
@@ -46,7 +54,7 @@
   @media (min-width: $page-width-desktop) {
     grid-template-columns: 568px 1fr;
     column-gap: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 83px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -54,9 +62,15 @@
 
 .form__submit {
   width: 100%;
+
+  @media (min-width: $page-width-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .form__notes {
+  margin-top: 22px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -64,7 +78,18 @@
   line-height: 16px;
   color: $black;
 
+  @media (min-width: $page-width-tablet) {
+    justify-self: start;
+    margin-top: 15px;
+    margin-bottom: 21px;
+    margin-left: 4px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
   @media (min-width: $page-width-desktop) {
     justify-self: start;
+    margin-top: 18px;
+    margin-bottom: 17px;
   }
 }

@@ -1,10 +1,10 @@
 .fields-group {
-  margin: 0 0 20px;
+  width: 100%;
+  margin: 0 0 15px;
   padding: 0 $page-padding-mobile;
   border: none;
 
   @media (min-width: $page-width-tablet) {
-    width: 100%;
     padding: 0 $form-padding-tablet;
   }
 
@@ -20,14 +20,32 @@
 
 .fields-group__legend {
   max-width: 80%;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $black;
+
+  @media (min-width: $page-width-tablet) {
+    max-width: 100%;
+    margin-bottom: 53px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .fields-group__text-input--big {
   width: 100%;
   min-height: 150px;
+  padding: 4px 13px;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $page-width-tablet) {
+    min-height: 174px;
+    padding: 9px 18px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
