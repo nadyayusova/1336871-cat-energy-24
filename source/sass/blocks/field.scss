@@ -31,13 +31,18 @@
 
   &--radio {
     display: flex;
-    align-items: center;
     margin-right: 0;
+    line-height: 28px;
     color: $special-dark-grey-2;
+
+    @media (min-width: $page-width-tablet) {
+      line-height: 36px;
+    }
   }
 
   &--radio::before {
     content: "";
+    flex-shrink: 0;
     display: block;
     width: 30px;
     height: 30px;
@@ -65,12 +70,17 @@
 
   &--checkbox {
     display: flex;
-    align-items: center;
+    line-height: 28px;
     color: $black;
+
+    @media (min-width: $page-width-tablet) {
+      line-height: 36px;
+    }
   }
 
   &--checkbox::before {
     content: "";
+    flex-shrink: 0;
     display: block;
     width: 28px;
     height: 28px;
