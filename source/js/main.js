@@ -19,6 +19,8 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+navToggle.click();
+
 function initMap() {
   map = new google.maps.Map(mapBlock, {
     center: new google.maps.LatLng(X, Y),

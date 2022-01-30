@@ -179,6 +179,10 @@
   display: none;
 }
 
+.main-nav--nojs .main-nav__list {
+  position: static;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -255,7 +259,7 @@
 
 
 .main-nav__link {
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -265,7 +269,7 @@
   @media (min-width: $page-width-tablet) {
     padding-top: 8px;
     padding-bottom: 8px;
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
