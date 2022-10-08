@@ -1,5 +1,9 @@
 # Личный проект «Кэт энерджи»
 
+Демо: [https://nadyayusova.github.io/1336871-cat-energy-24/](https://nadyayusova.github.io/1336871-cat-energy-24/)
+
+---
+
 * Студент: [Надежда Юсова](https://up.htmlacademy.ru/adaptive/24/user/1336871).
 * Наставник: [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
 
